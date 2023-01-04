@@ -11,21 +11,21 @@ else:
 
 common_protocols = {
 	7: {'Name': 'Echo', 'Protocol': 'TCP, UDP', 'Description': 'Echo service'},
-	20: {'Name': 'FTP-data', 'Protocol': ' TCP, SCTP', 'Description': 'File Transfer Protocol data transfer'},
-	21: {'Name': 'FTP', 'Protocol': ' TCP, UDP, SCTP', 'Description': 'File Transfer Protocol (FTP) control connection'},
-	22: {'Name': 'SSH-SCP', 'Protocol': 'TCP, UDP, SCTP ', 'Description': ' Secure Shell, secure logins, file transfers (scp, sftp), and port forwarding'},
+	20: {'Name': 'FTP-data', 'Protocol': 'TCP, SCTP', 'Description': 'File Transfer Protocol data transfer'},
+	21: {'Name': 'FTP', 'Protocol': 'TCP, UDP, SCTP', 'Description': 'File Transfer Protocol (FTP) control connection'},
+	22: {'Name': 'SSH-SCP', 'Protocol': 'TCP, UDP, SCTP ', 'Description': 'Secure Shell, secure logins, file transfers (scp, sftp), and port forwarding'},
 	23: {'Name': 'Telnet', 'Protocol': 'TCP', 'Description': 'Telnet protocol—unencrypted text communications'},
-	25: {'Name': 'SMTP', 'Protocol': 'TCP', 'Description': ' Simple Mail Transfer Protocol, used for email routing between mail servers'},
-	53: {'Name': 'DNS', 'Protocol': 'TCP, UDP', 'Description': ' Domain Name System name resolver'},
+	25: {'Name': 'SMTP', 'Protocol': 'TCP', 'Description': 'Simple Mail Transfer Protocol, used for email routing between mail servers'},
+	53: {'Name': 'DNS', 'Protocol': 'TCP, UDP', 'Description': 'Domain Name System name resolver'},
 	69: {'Name': 'TFTP', 'Protocol': 'UDP', 'Description': 'Trivial File Transfer Protocol'},
 	80: {'Name': 'HTTP', 'Protocol': 'TCP, UDP, SCTP', 'Description': 'HTTP port'},
 	88: {'Name': 'Kerberos', 'Protocol': 'TCP, UDP', 'Description': 'Network authentication system'},
 	102: {'Name': 'Iso-tsap', 'Protocol': 'TCP', 'Description': 'ISO Transport Service Access Point (TSAP) Class 0 protocol'},
 	110: {'Name': 'POP3', 'Protocol': 'TCP', 'Description': 'Post Office Protocol, version 3 (POP3)'},
 	135: {'Name': 'Microsoft EPMAP', 'Protocol': 'TCP, UDP', 'Description': 'Microsoft EPMAP (End Point Mapper), also known as DCE/RPC Locator service, used to remotely manage services including DHCP server, DNS server, and WINS. Also used by DCOM'},
-	137: {'Name': 'NetBIOS-ns', 'Protocol': 'TCP, UDP', 'Description': ' NetBIOS Name Service, used for name registration and resolution'},
+	137: {'Name': 'NetBIOS-ns', 'Protocol': 'TCP, UDP', 'Description': 'NetBIOS Name Service, used for name registration and resolution'},
 	139: {'Name': 'NetBIOS-ssn', 'Protocol': 'TCP, UDP', 'Description': 'NetBIOS Session Service'},
-	143: {'Name': 'IMAP4', 'Protocol': 'TCP, UDP', 'Description': ' Internet Message Access Protocol (IMAP), management of electronic mail messages on a server'},
+	143: {'Name': 'IMAP4', 'Protocol': 'TCP, UDP', 'Description': 'Internet Message Access Protocol (IMAP), management of electronic mail messages on a server'},
 	381: {'Name': 'HP Openview', 'Protocol': 'TCP, UDP', 'Description': 'HP data alarm manager'},
 	383: {'Name': 'HP Openview', 'Protocol': 'TCP, UDP', 'Description': 'HP data alarm manager'},
 	443: {'Name': 'HTTP over SSL', 'Protocol': 'TCP, UDP, SCTP', 'Description': 'Hypertext Transfer Protocol Secure (HTTPS) uses TCP in versions 1.x and 2. HTTP/3 uses QUIC, a transport protocol on top of UDP.'},
@@ -37,7 +37,7 @@ common_protocols = {
 	691: {'Name': 'MS Exchange', 'Protocol': 'TCP', 'Description': 'MS Exchange Routing'},
 	902: {'Name': 'VMware Server', 'Protocol': 'unofficial', 'Description': 'VMware ESXi'},
 	989: {'Name': 'FTP over SSL', 'Protocol': 'TCP, UDP', 'Description': 'FTPS Protocol (data), FTP over TLS/SSL'},
-	990: {'Name': 'FTP over SSL', 'Protocol': 'TCP, UDP', 'Description': ' FTPS Protocol (control), FTP over TLS/SSL'},
+	990: {'Name': 'FTP over SSL', 'Protocol': 'TCP, UDP', 'Description': 'FTPS Protocol (control), FTP over TLS/SSL'},
 	993: {'Name': 'IMAP4 over SSL', 'Protocol': 'TCP', 'Description': 'Internet Message Access Protocol over TLS/SSL (IMAPS)'},
 	995: {'Name': 'POP3 over SSL', 'Protocol': 'TCP, UDP', 'Description': 'Post Office Protocol 3 over TLS/SSL'},
 	1025: {'Name': 'Microsoft RPC', 'Protocol': 'TCP', 'Description': 'Microsoft operating systems tend to allocate one or more unsuspected, publicly exposed services (probably DCOM, but who knows) among the first handful of ports immediately above the end of the service port range (1024+).'},
@@ -46,12 +46,12 @@ common_protocols = {
 	1589: {'Name': 'Cisco VQP', 'Protocol': 'TCP, UDP', 'Description': 'Cisco VLAN Query Protocol (VQP)'},
 	1725: {'Name': 'Steam', 'Protocol': 'UDP', 'Description': 'Valve Steam Client uses port 1725'},
 	2082: {'Name': 'cPanel', 'Protocol': 'unofficial', 'Description': 'cPanel default'},
-	2083: {'Name': 'radsec, cPanel', 'Protocol': 'TCP, UDP', 'Description': ' Secure RADIUS Service (radsec), cPanel default SSL'},
+	2083: {'Name': 'radsec, cPanel', 'Protocol': 'TCP, UDP', 'Description': 'Secure RADIUS Service (radsec), cPanel default SSL'},
 	2483: {'Name': 'Oracle DB', 'Protocol': 'TCP, UDP', 'Description': 'Oracle database listening for insecure client connections to the listener, replaces port 1521'},
 	2484: {'Name': 'Oracle DB', 'Protocol': 'TCP, UDP', 'Description': 'Oracle database listening for SSL client connections to the listener'},
 	2967: {'Name': 'Symantec AV', 'Protocol': 'TCP, UDP', 'Description': 'Symantec System Center agent (SSC-AGENT)'},
 	3074: {'Name': 'XBOX Live', 'Protocol': 'TCP, UDP', 'Description': 'Xbox LIVE and Games for Windows – Live'},
-	3306: {'Name': 'MySQL', 'Protocol': 'TCP', 'Description': ' MySQL database system'},
+	3306: {'Name': 'MySQL', 'Protocol': 'TCP', 'Description': 'MySQL database system'},
 	3724: {'Name': 'World of Warcraft', 'Protocol': 'TCP, UDP', 'Description': 'Some Blizzard games, Unofficial Club Penguin Disney online game for kids'},
 	4664: {'Name': 'Google Desktop', 'Protocol': 'unofficial', 'Description': 'Google Desktop Search'},
 	5432: {'Name': 'PostgreSQL', 'Protocol': 'TCP', 'Description': 'PostgreSQL database system'},
@@ -122,13 +122,32 @@ def scanIP(target):
 			open_ports.append(p)
 	return open_ports
 
+def largest_length(key, ports):
+	max_len = 0
+	for p in ports:
+		if len(common_protocols[p][key]) > max_len:
+			max_len = len(common_protocols[p][key])
+	return max_len
+
 def check_common_ports(ports):
+	found = []
+	not_found = []
 	for port in ports:
 		if port in common_protocols.keys():
-			print(f"{port}: {common_protocols[port]}")
+			found.append(port)
+		else:
+			not_found.append(port)
+	name_length, protocol_length = largest_length("Name", found)+3, largest_length("Protocol", found)+3
+	print(f"Port\t{'Name'.ljust(name_length)}{'Protocol'.ljust(protocol_length)}Description")
+	for f in found:
+		print(f"{f}:\t{common_protocols[f]['Name'].ljust(name_length)}{common_protocols[f]['Protocol'].ljust(protocol_length)}{common_protocols[f]['Description']}")
+	if len(not_found) > 0:
+		uncommon = ""
+		for p in not_found:
+			uncommon += str(p) + " "
+		print(f"Unknown Protocols: {p}")
 
 
 p = scanIP(target)
 print(f"Open Ports: {p}")
 check_common_ports(p)
-
