@@ -129,23 +129,6 @@ def check_common_ports(ports):
 
 
 p = scanIP(target)
-print(p)
+print(f"Open Ports: {p}")
 check_common_ports(p)
-
-
-
-# with open("common_protocols.txt", "r") as file:
-# 	port_dict = {}
-# 	lines = [line.rstrip() for line in file]
-# 	for line in lines:
-# 		l = line.split("\t")
-# 		temp_dict = {}
-# 		temp_dict["Name"] = l[1]
-# 		temp_dict["Protocol"] = l[2]
-# 		temp_dict["Description"] = l[3]
-# 		port_dict[l[0]] = temp_dict
-# 	print("{")
-# 	for key in port_dict:
-# 		print(f"\t{key}: {port_dict[key]},")
-# 	print("}")
 
